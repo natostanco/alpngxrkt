@@ -7,9 +7,9 @@ Alpine linux nginx container for rkt.
 - Nginx from [ngxpgs](http://github.com/natostanco/ngxpgs)
 
 ### containers nomenclature
-- image=`alp` (Alpine Linux)
-- process=`ngx` (NGINX)
-- appc=`rkt` (Rocket)
+- image: `alp` (Alpine Linux)
+- process: `ngx` (NGINX)
+- appc: `rkt` (Rocket)
 
 
 
