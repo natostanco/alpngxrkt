@@ -1,0 +1,3 @@
+# Try
+####### this is for php without wordpress without cache #try_files $uri $uri/ /index.php?$args ;
+try_files /mda/w3tc-$host/pgcache/$cache_uri/_index.html $uri $uri/ /index.php?$args;
