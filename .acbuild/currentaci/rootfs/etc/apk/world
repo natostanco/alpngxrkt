@@ -1,0 +1,11 @@
+alpine-baselayout
+alpine-keys
+apk-tools
+apr
+apr-util
+icu
+libc-utils
+libjpeg-turbo
+nginx
+openssl
+pcre
