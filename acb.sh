@@ -19,7 +19,7 @@ acbuild --debug run -- /bin/sh -c "adduser -G www-data www-data -D"
 acbuild --debug port add http tcp 80
 acbuild --debug port add https tcp 443
  
-acbuild --debug set-exec -- /usr/sbin/nginx -g "daemon off;"
+acbuild --debug set-exec -- /usr/sbin/nginx
 acbuild --debug write --overwrite alpngxrkt.aci
 
 
