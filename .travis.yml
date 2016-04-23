@@ -4,7 +4,7 @@ before_install:
   | head -n 1 | cut -d '"' -f 4` -O acbuild.tar.gz
 - tar -zxf acbuild.tar.gz && rm acbuild.tar.gz
 script:
-- export SAVE=$PWD && ./acb.sh
+- export SAVE=$PWD && sudo ./acb.sh
 deploy:
   provider: releases
   api_key:
