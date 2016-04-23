@@ -6,7 +6,7 @@ alias sudo='sudo '
 alias ae='sudo acbuild end'
 
 apt-get update && apt-get install wget curl systemd-container sudo -y -q
-
+cd /home/save/
 acbuild begin /home/save/alpine.aci
 acbuild set-name natostanco/alpngxrkt
 acbuild run -- /bin/sh -c "apk --no-cache --update upgrade && apk add --no-cache openssl nginx apr apr-util libjpeg-turbo icu pcre gnupg jq"
