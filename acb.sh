@@ -5,7 +5,7 @@ alias acbuild='/home/save/acbuild'
 alias sudo='sudo ' 
 alias ae='sudo acbuild end'
 
-sudo apt-get install wget curl modprobe systemd-container
+sudo apt-get update && sudo apt-get install wget curl modprobe systemd-container -y -q
 
 acbuild begin /home/save/alpine.aci
 acbuild set-name natostanco/alpngxrkt
