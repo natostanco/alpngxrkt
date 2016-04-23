@@ -1,10 +1,10 @@
 services: docker
 before_install:
-- sudo apt-get install initscripts systemctl
 - wget `curl -s https://api.github.com/repos/appc/acbuild/releases | grep browser_download_url  | head -n 1 | cut -d '"' -f 4` -O acbuild.tar.gz
 - tar -zxf acbuild.tar.gz && rm acbuild.tar.gz
 script:
-- export SAVE=$PWD && sudo ./acb.sh
+- export SAVE=$PWD
+- docker run ubunutu:16.04 -it -v ${SAVE}:/home/save bash /home/share/acb.sh
 deploy:
   provider: releases
   api_key:
