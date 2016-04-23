@@ -5,7 +5,7 @@ alias acbuild='/home/save/acbuild'
 alias sudo='sudo ' 
 alias ae='sudo acbuild end'
 
-acbuild begin /home/share/alpine.aci
+acbuild begin /home/save/alpine.aci
 acbuild set-name natostanco/alpngxrkt
 acbuild run -- /bin/sh -c "apk --no-cache --update upgrade && apk add --no-cache openssl nginx apr apr-util libjpeg-turbo icu pcre gnupg jq"
 acbuild run -- wget `curl -s https://api.github.com/repos/natostanco/alpngxpgs/releases | grep browser_download_url | head -n 1 | cut -d '"' -f 4` -O ngx.tar.gz
