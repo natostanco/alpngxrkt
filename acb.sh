@@ -1,11 +1,11 @@
 #!/bin/bash
 shopt -s expand_aliases
 #source ~/.aliases
-alias acbuild='./acbuild'
+alias acbuild='/home/share/acbuild'
 alias sudo='sudo ' 
 alias ae='sudo acbuild end'
 
-acbuild begin ./alpine.aci
+acbuild begin /home/share/alpine.aci
 acbuild set-name natostanco/alpngxrkt
 acbuild run -- /bin/sh -c "apk --no-cache --update upgrade && apk add --no-cache openssl nginx apr apr-util libjpeg-turbo icu pcre gnupg jq"
 acbuild run -- wget `curl -s https://api.github.com/repos/natostanco/alpngxpgs/releases | grep browser_download_url | head -n 1 | cut -d '"' -f 4` -O ngx.tar.gz
@@ -20,7 +20,7 @@ acbuild port add http tcp 80
 acbuild port add https tcp 443
  
 acbuild set-exec -- /usr/sbin/nginx
-acbuild write --overwrite alpngxrkt.aci
+acbuild write --overwrite /home/share/alpngxrkt.aci
 
 
 
