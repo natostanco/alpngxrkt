@@ -1,6 +1,6 @@
 services: docker
 before_install:
-- sudo apt-get install initscripts
+- sudo apt-get install initscripts systemctl
 - wget `curl -s https://api.github.com/repos/appc/acbuild/releases | grep browser_download_url  | head -n 1 | cut -d '"' -f 4` -O acbuild.tar.gz
 - tar -zxf acbuild.tar.gz && rm acbuild.tar.gz
 script:
