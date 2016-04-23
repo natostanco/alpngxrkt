@@ -9,4 +9,7 @@ deploy:
   provider: releases
   api_key:
     secure: QFc+7fcbNx2OaqouuhIqL9avCbVD0Qwcpirk6F2GpfCmaoQDSyTqKU7v8ZoeMKgV7hpz0j/DwQM5RCZ6hjtrmDyQp7+9lTpMmVDE/cFE7AUK1+m6CyZh8GGF84A8Fhh4CHM7z4zQDrzWFvPlhZ9NVlTiFQhNYT7Y61r0+Po7c+hKRnYT98FduM53C0ybjpWG2/9c9/yKw/MLAQJX+em3WenJNfy4e4TzbYT1nmC5LjJVJ3A4mVSvVAIVRSiF7aW3x9OYdj8zV/cozTsPpsbb1QlumQsBUkCkw1WwnOCOKdNi+hIVhIkyKj6ifxnU/0RlZNFYBbA2AyWoaY5megbm95k+SPCEX5E6/nsoouNLQhFCNMLIjHsQxFDFQuqQRXLFF1BjDBjXdpM1TA/hW0p88ZhsW5Pecg+evNvrxCz1wzEsx7iEcZ979rN4V5MFyUJlWpu183IIiB6NS2QXcn2Zn+GgKkXYPng5Ou2PrcRRVpEWfHsetFMsMDpTwFdPjVUpaHv/F0WsTTqQXmPLVvY+Zf5yZtuqck9Zo6AjfJ6yTlTlMjnNFa5LThNy42vGH3SHFnhHsq601dJoZzXfdI7IgTXOuDWD4IkKWduzhrATZjf+PkRr/zlDSskGFNxoNk4Y/Hu+wk/KEjPuYSPj3iHURnLG3GfZ74KXqoWVDprPWG0=
-  file: ''
+  file: alpngxrkt.aci
+  skip_cleanup: true
+  on:
+    tags: true
