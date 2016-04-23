@@ -1,7 +1,7 @@
 #!/bin/bash
 #shopt -s expand_aliases
 #source ~/.aliases
-alias acbuild="/home/dev/acbuild/acbuild'
+alias acbuild="./acbuild'
 alias sudo='sudo ' 
 alias ae='sudo acbuild end'
 
