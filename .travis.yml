@@ -1,0 +1,17 @@
+services: docker
+before_install:
+  - wget `curl -s https://api.github.com/repos/appc/acbuild/releases | grep browser_download_url | head -n 1 | cut -d '"' -f 4` -O acbuild.tar.gz
+  - tar -zxf acbuild.tar.gz && rm acbuild.tar.gz
+script: 
+  - export SAVE=$PWD
+  - ./acb.sh
+#before_deploy: 
+#  - cd
+#  - tar -czf ... --directory="${SAVE}" ...
+deploy:
+  provider: releases
+  api_key:
+  file: ...
+  skip_cleanup: true
+  on:
+    tags: true
