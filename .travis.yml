@@ -4,7 +4,7 @@ before_install:
 - tar -zxf acbuild.tar.gz && rm acbuild.tar.gz
 script:
 - export SAVE=$PWD
-- docker run -it -v ${SAVE}:/home/save ubunutu:16.04 bash /home/share/acb.sh
+- docker run -it -v ${SAVE}:/home/save ubuntu:16.04 bash /home/share/acb.sh
 deploy:
   provider: releases
   api_key:
