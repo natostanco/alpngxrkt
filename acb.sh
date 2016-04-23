@@ -20,7 +20,7 @@ acbuild port add http tcp 80
 acbuild port add https tcp 443
  
 acbuild set-exec -- /usr/sbin/nginx
-acbuild write --overwrite /home/share/alpngxrkt.aci
+acbuild write --overwrite /home/save/alpngxrkt.aci
 
 
 
